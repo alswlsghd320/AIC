@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03e5b450-e660-4ca9-949f-29c0505b3187" name="Default Changelist" comment="add environment.yml" />
+    <list default="true" id="03e5b450-e660-4ca9-949f-29c0505b3187" name="Default Changelist" comment="modify README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602724059567</updated>
-      <workItem from="1602724060611" duration="4576000" />
+      <workItem from="1602724060611" duration="6701000" />
     </task>
     <task id="LOCAL-00001" summary="add environment.yml">
       <created>1602728542787</created>
@@ -51,7 +53,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602728542787</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add environment.yml">
+      <created>1602729180295</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602729180296</updated>
+    </task>
+    <task id="LOCAL-00003" summary="modify README.md">
+      <created>1602729213425</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602729213425</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -59,7 +75,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add environment.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add environment.yml" />
+    <MESSAGE value="modify README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="433" y="-709" key="#Notifications" timestamp="1602727737852">
@@ -83,10 +100,10 @@
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
     <state x="213" y="-901" key="SettingsEditor/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602724389824" />
-    <state x="304" y="-813" key="Vcs.Push.Dialog.v2" timestamp="1602728561444">
+    <state x="304" y="-813" key="Vcs.Push.Dialog.v2" timestamp="1602729182244">
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="304" y="-813" key="Vcs.Push.Dialog.v2/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602728561444" />
+    <state x="304" y="-813" key="Vcs.Push.Dialog.v2/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602729182244" />
     <state x="764" y="-802" key="ftp.server.browser" timestamp="1602724357561">
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
@@ -95,5 +112,16 @@
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
     <state x="526" y="-639" key="git4idea.remote.GitConfigureRemotesDialog/0.23.1440.877/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602727346562" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Downloads/붙임. AI 챔피언십 대면평가 관련 안내자료/참고4. (AI 챔피언십) 샘플채점코드(rmse)_ver.1.1.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
