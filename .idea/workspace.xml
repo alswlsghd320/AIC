@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03e5b450-e660-4ca9-949f-29c0505b3187" name="Default Changelist" comment="" />
+    <list default="true" id="03e5b450-e660-4ca9-949f-29c0505b3187" name="Default Changelist" comment="add environment.yml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,12 +42,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602724059567</updated>
-      <workItem from="1602724060611" duration="4122000" />
+      <workItem from="1602724060611" duration="4576000" />
     </task>
+    <task id="LOCAL-00001" summary="add environment.yml">
+      <created>1602728542787</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602728542787</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add environment.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add environment.yml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="433" y="-709" key="#Notifications" timestamp="1602727737852">
@@ -71,6 +83,10 @@
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
     <state x="213" y="-901" key="SettingsEditor/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602724389824" />
+    <state x="304" y="-813" key="Vcs.Push.Dialog.v2" timestamp="1602728561444">
+      <screen x="-256" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="304" y="-813" key="Vcs.Push.Dialog.v2/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602728561444" />
     <state x="764" y="-802" key="ftp.server.browser" timestamp="1602724357561">
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
