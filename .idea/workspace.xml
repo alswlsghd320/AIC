@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="03e5b450-e660-4ca9-949f-29c0505b3187" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="183992a0-e479-4690-b82f-8efe7cac67e7" />
+  <component name="ProjectId" id="1itPkhDqn5nbMel2JY04Yydj3aw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03e5b450-e660-4ca9-949f-29c0505b3187" name="Default Changelist" comment="" />
+      <created>1602724059567</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602724059567</updated>
+      <workItem from="1602724060611" duration="4122000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="433" y="-709" key="#Notifications" timestamp="1602727737852">
+      <screen x="-256" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="433" y="-709" key="#Notifications/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602727737852" />
+    <state x="288" y="-888" key="#SSH_Configurations" timestamp="1602724141254">
+      <screen x="-256" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="288" y="-888" key="#SSH_Configurations/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602724141254" />
+    <state x="-156" y="-980" width="1720" height="880" key="DirDiffDialog" timestamp="1602728402855">
+      <screen x="-256" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="-156" y="-980" width="1720" height="880" key="DirDiffDialog/0.23.1440.822/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602728402855" />
+    <state x="581" y="-636" key="Github.ShareDialog" timestamp="1602727728870">
+      <screen x="-256" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="581" y="-636" key="Github.ShareDialog/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602727728870" />
+    <state x="581" y="-636" key="Github.ShareDialog/0.23.1440.877/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602727322409" />
+    <state x="213" y="-901" key="SettingsEditor" timestamp="1602724389824">
+      <screen x="-256" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="213" y="-901" key="SettingsEditor/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602724389824" />
+    <state x="764" y="-802" key="ftp.server.browser" timestamp="1602724357561">
+      <screen x="-256" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="764" y="-802" key="ftp.server.browser/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602724357561" />
+    <state x="526" y="-639" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1602727346562">
+      <screen x="-256" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="526" y="-639" key="git4idea.remote.GitConfigureRemotesDialog/0.23.1440.877/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602727346562" />
+  </component>
+</project>
