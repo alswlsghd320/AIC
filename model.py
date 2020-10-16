@@ -267,15 +267,15 @@ class VideoLearner(object):
 
             scheduler.step()
 
-#             if save_model:
-#                 self.save(
-#                     os.path.join(
-#                         model_dir,
-#                         "{model_name}_{self.epoch}.pt".format(
-#                             model_name=model_name, epoch=str(e).zfill(3),
-#                         ),
-#                     )
-#                 )
+            if save_model:
+                self.save(
+                    os.path.join(
+                        model_dir,
+                        "{model_name}_{self.epoch}.pt".format(
+                            model_name=model_name, epoch=str(e).zfill(3),
+                        ),
+                    )
+                )
         #self.plot_precision_loss_curves()
 
     @staticmethod

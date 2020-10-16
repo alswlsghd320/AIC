@@ -87,7 +87,7 @@
     
     직접 코드를 작성하실 때는 필요한 라이브러리를 임포트하시면 됩니다.
 '''
-
+import torch
 import sys
 import pandas as pd
 import numpy as np
@@ -121,7 +121,43 @@ gt = pd.read_csv(sys.argv[1])  # 테스트셋정답(sys.argv[1])을 pandas로 �
                                # gt(ground truth)라는 이름으로 할당
 pr = pd.read_csv(sys.argv[2])  # 채점할결과(sys.argv[2])를 pandas로 불러와 
                                # pr(prediction result) 인자로 할당
-                               
+
+def get_parser():
+    parser = argparse.ArgumentParser(description="AI Championship Action recognition")
+    parser.add_argument(
+        "--config-file",
+        default="./mask_rcnn_R_50_FPN_inference_acc_test.yaml",
+        metavar="FILE",
+        help="path to config file",
+    )
+    parser.add_argument("--webcam", action="store_true", help="Take inputs from webcam.")
+    parser.add_argument("--video-input", help="Path to video file.")
+    parser.add_argument(
+        "--input",
+        nargs="+",
+        help="A list of space separated input images; "
+        "or a single glob pattern such as 'directory/*.jpg'",
+    )
+    parser.add_argument(
+        "--output",
+        help="A file or directory to save output visualizations. "
+        "If not given, will show output in an OpenCV window.",
+    )
+
+    parser.add_argument(
+        "--confidence-threshold",
+        type=float,
+        default=0.1,
+        help="Minimum score for instance predictions to be shown",
+    )
+    parser.add_argument(
+        "--opts",
+        help="Modify config options using the command-line 'KEY VALUE' pairs",
+        default=[],
+        nargs=argparse.REMAINDER,
+    )
+    return parser
+
 ##############################################################################
 
 
