@@ -88,8 +88,7 @@
     직접 코드를 작성하실 때는 필요한 라이브러리를 임포트하시면 됩니다.
 '''
 import torch
-import sys
-import pandas as pd
+import os
 import numpy as np
 from model import VideoLearner
 from dataset import VideoRecord, VideoDataset

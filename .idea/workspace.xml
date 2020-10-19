@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="03e5b450-e660-4ca9-949f-29c0505b3187" name="Default Changelist" comment="add kinetics.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/score.py" beforeDir="false" afterPath="$PROJECT_DIR$/score.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/참고4. (AI 챔피언십) 샘플채점코드(rmse)_ver.1.1.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +72,7 @@
       <updated>1602724059567</updated>
       <workItem from="1602724060611" duration="12427000" />
       <workItem from="1602828061203" duration="6433000" />
-      <workItem from="1603064860973" duration="1255000" />
+      <workItem from="1603064860973" duration="1364000" />
     </task>
     <task id="LOCAL-00001" summary="add environment.yml">
       <created>1602728542787</created>
@@ -115,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602836493988</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add score.py">
+      <created>1603071093687</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603071093687</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +147,8 @@
     <MESSAGE value="add sample_test" />
     <MESSAGE value="add kinetics.py" />
     <MESSAGE value="10/16" />
-    <option name="LAST_COMMIT_MESSAGE" value="10/16" />
+    <MESSAGE value="add score.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add score.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="433" y="-709" key="#Notifications" timestamp="1602727737852">
@@ -163,10 +172,10 @@
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
     <state x="213" y="-901" key="SettingsEditor/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602724389824" />
-    <state x="304" y="-813" key="Vcs.Push.Dialog.v2" timestamp="1602836498336">
+    <state x="304" y="-813" key="Vcs.Push.Dialog.v2" timestamp="1603071096994">
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="304" y="-813" key="Vcs.Push.Dialog.v2/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602836498336" />
+    <state x="304" y="-813" key="Vcs.Push.Dialog.v2/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1603071096994" />
     <state x="764" y="-802" key="ftp.server.browser" timestamp="1602724357561">
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
