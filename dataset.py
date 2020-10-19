@@ -3,7 +3,7 @@ import os
 import copy
 import math
 from pathlib import Path
-import warnings
+#import warnings
 from typing import Callable, Tuple, Union, List
 
 import decord

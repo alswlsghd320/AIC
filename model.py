@@ -31,7 +31,7 @@ from PIL import Image
 from threading import Thread
 from torchvision.transforms import Compose
 from dataset import get_transforms
-import warning
+#import warning
 from gpu import torch_device, num_devices
 from dataset import VideoDataset
 from torchvision.models.video.resnet import R2Plus1dStem, BasicBlock, Bottleneck
@@ -457,7 +457,6 @@ class VideoLearner(object):
     def evaluate(
         self,
         num_samples: int = 10,
-        report_every: int = 100,
         train_or_test: str = "test",
     ) -> None:
         """ eval code for validation/test set and saves the evaluation results in self.results.
@@ -495,55 +494,31 @@ class VideoLearner(object):
         )
 
         # Loop over all examples in the test set and compute accuracies
-        ret = dict(
-            infer_times=[],
-            video_preds=[],
-            video_trues=[],
-            clip_preds=[],
-            clip_trues=[],
-        )
-        report_every = 100
+        ret = dict(video_preds=[], video_trues=[])
+
 
         # inference
         with torch.no_grad():
             for i in range(
                 1, len(ds)
-            ):  # [::10]:  # Skip some examples to speed up accuracy computation
-                if i % report_every == 0:
-                    print(
-                        f"Processsing {i} of {len(self.dataset.test_ds)} samples.."
-                    )
+            ):
 
                 # Get model inputs
                 inputs, label = ds[i]
                 inputs = inputs.to(device, non_blocking=True)
 
-                # Run inference
-                start_time = time()
                 outputs = self.model(inputs)
                 outputs = outputs.cpu().numpy()
-                infer_time = time() - start_time
-                ret["infer_times"].append(infer_time)
 
                 # Store results
                 ret["video_preds"].append(outputs.sum(axis=0).argmax())
                 ret["video_trues"].append(label)
-                ret["clip_preds"].extend(outputs.argmax(axis=1))
-                ret["clip_trues"].extend([label] * num_samples)
 
         print(
-            f"Avg. inference time per video ({len(ds)} clips) =",
-            round(np.array(ret["infer_times"]).mean() * 1000, 2),
-            "ms",
-        )
-        print(
-            "Video prediction accuracy =",
+            "score: ",
             round(accuracy_score(ret["video_trues"], ret["video_preds"]), 2),
         )
-        print(
-            "Clip prediction accuracy =",
-            round(accuracy_score(ret["clip_trues"], ret["clip_preds"]), 2),
-        )
+
         return ret
 
     def _predict(self, frames, transform):

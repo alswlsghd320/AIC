@@ -70,11 +70,15 @@
 ##############################################################################
 #                           Ⅰ. 라이브러리 로드
 ##############################################################################
+
 import torch
 import os
 import numpy as np
+import argparse
+
 from model import VideoLearner
 from dataset import VideoRecord, VideoDataset
+
 ##############################################################################
 
 
@@ -136,15 +140,16 @@ def get_parser():
     직접 코드를 작성하실 때는 평가용 함수에 입력하기 위해 필요한 전처리 과정을 
     직접 설계하신 내용에 맞추어 수행하시면 됩니다. 
 '''
-args = get_parser()
+args = get_parser().parse_args()
 
 model_dir = os.path.join(args.model_path)
+video_dir = os.path.join(model_dir, 'videos')
 test_txt = os.path.join(args.score_path)
 
-data = VideoDataset(model_dir, train_split_file=test_txt, test_split_file=test_txt,batch_size=4,sample_length=args.num_frames)
+data = VideoDataset(video_dir, train_split_file=test_txt, test_split_file=test_txt,batch_size=4,sample_length=args.num_frames)
 
-model = VideoLearner(data, num_classes=30)
-model.load(model_name=os.path.join(model_dir, args.model_name))
+model = VideoLearner(data, num_classes=2)
+model.load(model_name=args.model_name, model_dir=model_dir)
 ##############################################################################
 
 
@@ -176,7 +181,7 @@ model.load(model_name=os.path.join(model_dir, args.model_name))
     예): score: 0.975
 '''
 
-score = learner.evaluate()
+score = model.evaluate()
 ##############################################################################
 
 
