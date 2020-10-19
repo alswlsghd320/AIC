@@ -144,7 +144,7 @@ def get_parser():
     parser.add_argument(
         "--num_frames",
         default=32,
-        help="The format is 'folder/video label' ",
+        help="num_frames, We all train video dataset for 8 or 32 frames",
     )
 
     return parser
