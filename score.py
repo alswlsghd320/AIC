@@ -146,11 +146,6 @@ def get_parser():
         default=32,
         help="The format is 'folder/video label' ",
     )
-    parser.add_argument(
-        "--output",
-        help="A file or directory to save output visualizations. "
-        "If not given, will show output in an OpenCV window.",
-    )
 
     return parser
 
