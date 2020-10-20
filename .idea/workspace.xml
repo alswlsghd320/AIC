@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03e5b450-e660-4ca9-949f-29c0505b3187" name="Default Changelist" comment="add kinetics.py">
+      <change afterPath="$PROJECT_DIR$/check_score.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/score.py" beforeDir="false" afterPath="$PROJECT_DIR$/score.py" afterDir="false" />
     </list>
@@ -73,7 +73,8 @@
       <updated>1602724059567</updated>
       <workItem from="1602724060611" duration="12427000" />
       <workItem from="1602828061203" duration="6433000" />
-      <workItem from="1603064860973" duration="5728000" />
+      <workItem from="1603064860973" duration="7297000" />
+      <workItem from="1603172553079" duration="1376000" />
     </task>
     <task id="LOCAL-00001" summary="add environment.yml">
       <created>1602728542787</created>
@@ -152,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603074278305</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="10/19">
+      <created>1603088392975</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1603088392975</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +202,10 @@
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
     <state x="288" y="-888" key="#SSH_Configurations/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602724141254" />
+    <state x="429" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603173613756">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="429" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1603173613756" />
     <state x="-156" y="-980" width="1720" height="880" key="DirDiffDialog" timestamp="1602728402855">
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
@@ -207,10 +219,10 @@
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
     <state x="213" y="-901" key="SettingsEditor/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602724389824" />
-    <state x="6" y="-792" key="Vcs.Push.Dialog.v2" timestamp="1603074280275">
+    <state x="6" y="-792" key="Vcs.Push.Dialog.v2" timestamp="1603088394869">
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="6" y="-792" key="Vcs.Push.Dialog.v2/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1603074280275" />
+    <state x="6" y="-792" key="Vcs.Push.Dialog.v2/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1603088394869" />
     <state x="764" y="-802" key="ftp.server.browser" timestamp="1602724357561">
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>

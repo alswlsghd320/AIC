@@ -516,7 +516,7 @@ class VideoLearner(object):
 
         print(
             "score: ",
-            round(accuracy_score(ret["video_trues"], ret["video_preds"]), 2),
+            round(accuracy_score(ret["video_trues"], ret["video_preds"]), 4),
         )
 
         return ret
