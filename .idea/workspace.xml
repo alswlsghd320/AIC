@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03e5b450-e660-4ca9-949f-29c0505b3187" name="Default Changelist" comment="add kinetics.py">
-      <change afterPath="$PROJECT_DIR$/check_score.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_score.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/score.py" beforeDir="false" afterPath="$PROJECT_DIR$/score.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_hmdb_custom.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/train.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,9 @@
       <workItem from="1602724060611" duration="12427000" />
       <workItem from="1602828061203" duration="6433000" />
       <workItem from="1603064860973" duration="7297000" />
-      <workItem from="1603172553079" duration="1376000" />
+      <workItem from="1603172553079" duration="2602000" />
+      <workItem from="1603268256818" duration="927000" />
+      <workItem from="1603432766271" duration="3115000" />
     </task>
     <task id="LOCAL-00001" summary="add environment.yml">
       <created>1602728542787</created>
@@ -160,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603088392975</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="10/20 add check_score.py">
+      <created>1603175134688</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603175134688</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,13 +197,15 @@
     <MESSAGE value="add score.py" />
     <MESSAGE value="modify score.py" />
     <MESSAGE value="10/19" />
-    <option name="LAST_COMMIT_MESSAGE" value="10/19" />
+    <MESSAGE value="10/20 add check_score.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="10/20 add check_score.py" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="719" y="-875" key="#Deployment" timestamp="1603079857641">
-      <screen x="-256" y="-1080" width="1920" height="1080" />
+    <state x="640" y="171" key="#Deployment" timestamp="1603269501783">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="719" y="-875" key="#Deployment/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1603079857641" />
+    <state x="640" y="171" key="#Deployment/0.0.1440.900@0.0.1440.900" timestamp="1603269501783" />
     <state x="433" y="-709" key="#Notifications" timestamp="1602727737852">
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
@@ -219,10 +231,11 @@
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
     <state x="213" y="-901" key="SettingsEditor/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1602724389824" />
-    <state x="6" y="-792" key="Vcs.Push.Dialog.v2" timestamp="1603088394869">
-      <screen x="-256" y="-1080" width="1920" height="1080" />
+    <state x="197" y="240" key="Vcs.Push.Dialog.v2" timestamp="1603175137828">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="6" y="-792" key="Vcs.Push.Dialog.v2/0.0.1440.900/-256.-1080.1920.1080@-256.-1080.1920.1080" timestamp="1603088394869" />
+    <state x="197" y="240" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1603175137828" />
     <state x="764" y="-802" key="ftp.server.browser" timestamp="1602724357561">
       <screen x="-256" y="-1080" width="1920" height="1080" />
     </state>
