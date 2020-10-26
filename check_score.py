@@ -160,7 +160,7 @@ def acc(y_true, y_pred):
 '''
 
 score = acc(gt, pr)
-print(f"scroe: {score:.4f}")
+print(f"score: {score:.4f}")
 ##############################################################################
 
 
