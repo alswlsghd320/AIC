@@ -43,6 +43,13 @@ python evaulate.py --video_dir <vidio_path>
                    --file_dir <file_dir> : You can save it where you want it.
                    --file_name <file_name> : default=prediction.txt
 ```
+## Check the score
+If you want to check the accuracy between prediction.txt and answer file, Enter this code
+```
+python check_score <answer.txt> <prediction.txt>
+#output : score: 0.xxxx
+```
+
 
 ## Demo
 The following example notebooks are provided: click [here](demo.ipynb) 
