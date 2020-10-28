@@ -45,4 +45,4 @@ python evaulate.py --video_dir <vidio_path>
 ```
 
 ## Demo
-The following example notebooks are provided: click [here](train.ipynb) 
+The following example notebooks are provided: click [here](demo.ipynb) 
