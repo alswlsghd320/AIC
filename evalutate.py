@@ -54,7 +54,7 @@ if __name__ == '__main__':
     )
 
     learner = VideoLearner(data, num_classes=args.num_classes)
-    learner.load(model_name=args.model_name ,model_dir=args.model_dir)
+    learner.load(model_name=args.model_name, model_dir=args.model_dir)
 
     learner.create_predict_txt(file_path=args.file_path,
                                file_name=args.file_name,
