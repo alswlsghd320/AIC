@@ -1,18 +1,13 @@
 # AI Championship : Action recogtion on MBN dataset
 
-### 1. Preparing dataset
-#### 데이터셋 : 한국데이터거래소(KDX) 제공 데이터
-MBN Entertainment Youtube 채널에 존재하는 영상 데이터 정보 파일 (*.xlsx) \
-약 1,000여개 Youtube 영상의 행동 카테고리, 행동 시점 레이블링 파일 (*.csv) \
-30여개의 행동 카테고리를 별도 제시 \
--> MBN 영상에 적용 가능한 Kinectics 400 벤치마크 기반으로 구성 
-
 ## Installation
 
 ```
 git clone https://github.com/alswlsghd320/AIC.git 
 cd AIC 
-conda create -f environment.yml 
+pip install -r requirement.txt
+
+conda install ffmpeg
 
 # Do NOT command 'pip install apex'
 git clone https://www.github.com/nvidia/apex \
@@ -20,9 +15,34 @@ cd apex \
 python3 setup.py install \
 ```
 
+## Training
+If you want to train this model, Enter this code.
+```
+python train.py --video_dir <vidio_path> --train_path <train.txt> test_path <test.txt>
+
+'''
+args:
+    --num_frames <8 or 32> : Model Input Size (must be followed by 8 or 32)
+    --epochs <Epochs> : Epochs to train
+    --batch_size <Batch size> 
+    --lr <Learning Rate> 
+    --save_model : If true, save the trained model. Need to enter model_dir, model_name  
+    --model_dir <model_dir> : you can enter the model_dir if you can save it where you want it. 
+    --model_name <model_name> 
+'''
+```
+
+## Evaluate
+If you want to create prediction.txt to compare with the answer file, Enter this code.
+```
+python evaulate.py --video_dir <vidio_path> 
+                   --model_dir <model_dir> 
+                   --test_path <test.txt>
+                   --model_name <model_name> : This format is followed by {model_epochs.pt}
+                   --num_classes <num_classes=56> : In AIC task, the number of classes is 57.
+                   --file_dir <file_dir> : You can save it where you want it.
+                   --file_name <file_name> : default=prediction.txt
+```
+
 ## Demo
 The following example notebooks are provided: click [here](train.ipynb) 
-
-
-
-
