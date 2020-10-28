@@ -1,10 +1,10 @@
 import argparse
 import os
 from model import VideoLearner
-from dataset import VideoDataset, VideoRecord
+from dataset import VideoDataset
 
 def get_parser():
-    parser = argparse.ArgumentParser(description="Detectron2 demo for builtin models")
+    parser = argparse.ArgumentParser(description="Action recognition model for AI Championship")
     parser.add_argument(
         "--model_dir",
         default='./',
