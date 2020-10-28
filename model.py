@@ -311,15 +311,7 @@ class VideoLearner(object):
 
             scheduler.step()
 
-            if save_model:
-                self.save(
-                    os.path.join(
-                        model_dir,
-                        "{model_name}_{self.epoch}.pt".format(
-                            model_name=model_name, epoch=str(e).zfill(3),
-                        ),
-                    )
-                )
+
         #self.plot_precision_loss_curves()
 
     @staticmethod
@@ -477,7 +469,7 @@ class VideoLearner(object):
         # init model with gpu (or not)
         self.model.to(device)
         if num_gpus > 1:
-            self.model = nn.DataParallel(model)
+            self.model = nn.DataParallel(self.model)
         self.model.eval()
 
         # set train or test
@@ -521,6 +513,48 @@ class VideoLearner(object):
 
         return ret
 
+    def create_predict_txt(self, file_path='./', file_name='result.txt') -> None:
+        """
+        Create score_txt
+        """
+
+        # set device and num_gpus
+        num_gpus = num_devices()
+        device = torch_device()
+        torch.backends.cudnn.benchmark = True if cuda.is_available() else False
+
+        # init model with gpu (or not)
+        self.model.to(device)
+        if num_gpus > 1:
+            self.model = nn.DataParallel(self.model)
+        self.model.eval()
+
+        ds = self.dataset.test_ds
+
+        print("Start to evaluate ")
+
+        #Create score file
+        f = open(os.path.join(file_path, file_name), 'w')
+
+        # inference
+        with torch.no_grad():
+            for i in range(
+                    1, len(ds)
+            ):
+                # Get model inputs
+                inputs, label = ds[i]
+                inputs = inputs.to(device, non_blocking=True)
+
+                outputs = self.model(inputs)
+                outputs = outputs.cpu().numpy()
+
+                # Store results
+                f.write(str(outputs.sum(axis=0).argmax()) + '\n')
+
+        f.close()
+
+
+
     def save(self, model_path: Union[Path, str]) -> None:
         """ Save the model to a path on disk. """
         torch.save(self.model.state_dict(), model_path)
@@ -528,11 +562,11 @@ class VideoLearner(object):
     def load(self, model_name: str, model_dir: str = "checkpoints") -> None:
         """
         TODO accept epoch. If None, load the latest model.
-        :param model_name: Model name format should be 'name_0EE' where E is the epoch
+        :param model_name: Model name format should be 'name_0EE.pt' where E is the epoch
         :param model_dir: By default, 'checkpoints'
         :return:
         """
         self.model.load_state_dict(
-            torch.load(os.path.join(model_dir, f"{model_name}.pt"))
+            torch.load(os.path.join(model_dir, f"{model_name}"))
         )
 
