@@ -30,11 +30,11 @@ def get_parser():
     )
     parser.add_argument(
         "--test_path",
-        help="Text file to test the model. format: label/videos1 ",
+        help="Text file to test the model.",
     )
     parser.add_argument(
         "--num_classes",
-        default=57
+        default=56
     )
     return parser
 

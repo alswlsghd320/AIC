@@ -42,7 +42,7 @@ def get_parser():
         default=4
     )
     parser.add_argument(
-        "--learning_rate",
+        "--lr",
         type=float,
         default=0.0001
     )
@@ -89,7 +89,7 @@ data = VideoDataset(
     #video_ext="avi"
 )
 
-learner = VideoLearner(data, num_classes=57)
+learner = VideoLearner(data, num_classes=56)
 
 learner.fit(lr=LR, epochs=EPOCHS)
 
